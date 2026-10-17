@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Mark Pocholo Ombao, an aspiring web developer." />
+  <title>Mark Pocholo Ombao | Aspiring Web Developer</title>
+
+  <!-- Link to our CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =====================================================
+       SVG ICON SPRITE
+       Define each icon once here, then reuse it anywhere with:
+       <svg class="icon"><use href="#icon-name"></use></svg>
+       ===================================================== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><polygon points="12 3 1 9 12 15 23 9 12 3"/><path d="M5 12v5c3 3 11 3 14 0v-5"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+      <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+      <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- =====================================================
+       1. NAVIGATION BAR (sticky at the top)
+       ===================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="Go to top">BAO</a>
+
+      <!-- Hamburger button (only visible on mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =====================================================
+         2. HOME / HERO SECTION
+         ===================================================== -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+
+        <!-- Left column: text -->
+        <div class="hero-text">
+          <p class="hello">Hello, I'm</p>
+          <h1 class="name">Mark Pocholo <span class="gradient-text">Ombao</span></h1>
+          <!-- The typing animation in script.js writes into #typing -->
+          <h2 class="role"><span id="typing">Aspiring Web Developer</span><span class="cursor" aria-hidden="true">|</span></h2>
+          <p class="intro">
+            I build simple and functional websites using HTML, CSS and JavaScript.
+            I'm passionate about learning new things and turning ideas into real projects.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Projects
+              <svg class="icon"><use href="#i-arrow"></use></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- Right column: profile image (replace images/profile.jpg with your photo) -->
+        <div class="hero-image">
+          <div class="avatar">
+            <img src="converted.jpg" alt="" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         3. ABOUT ME SECTION
+         ===================================================== -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+
+        <div class="reveal">
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="about-text">
+            Hi! I'm Mark Pocholo Ombao, a student and aspiring web developer.
+            I enjoy creating websites and learning how to make them more interactive
+            and user-friendly. In my free time, I explore new technologies and
+            improve my skills in HTML, CSS, and JavaScript.
+          </p>
+        </div>
+
+        <!-- Information list: edit the text to match your details -->
+        <ul class="info-list reveal">
+          <li>
+            <svg class="icon info-icon"><use href="#i-user"></use></svg>
+            <div><strong>Name</strong><span>Mark Pocholo Ombao</span></div>
+          </li>
+          <li>
+            <svg class="icon info-icon"><use href="#i-cap"></use></svg>
+            <div><strong>Education</strong><span>3rd Year College</span></div>
+          </li>
+          <li>
+            <svg class="icon info-icon"><use href="#i-pin"></use></svg>
+            <div><strong>Location</strong><span>Bulacan, Philippines</span></div>
+          </li>
+          <li>
+            <svg class="icon info-icon"><use href="#i-mail"></use></svg>
+            <div><strong>Email</strong><span>ombaopocholo@gmail.com</span></div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         4. SKILLS SECTION
+         ===================================================== -->
+    <section class="section alt" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">My <span class="gradient-text">Skills</span></h2>
+
+        <div class="skills-grid">
+
+          <!-- HTML card -->
+          <article class="card skill-card reveal">
+            <svg class="skill-icon" viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M8 4h48l-4.4 49L32 60 12.4 53z" fill="#e44d26"/>
+              <path d="M32 8v48l16-5 3.6-43z" fill="#f16529"/>
+              <path d="M20 18h24l-.7 7H27.5l.5 6h14.6l-1.3 14L32 49l-9.3-4-.6-8h6.5l.3 3.6 3.1 1 3.2-1 .4-5H21z" fill="#fff"/>
+            </svg>
+            <div>
+              <h3>HTML</h3>
+              <p>Structure the content of the web.</p>
+            </div>
+          </article>
+
+          <!-- CSS card -->
+          <article class="card skill-card reveal">
+            <svg class="skill-icon" viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M8 4h48l-4.4 49L32 60 12.4 53z" fill="#1572b6"/>
+              <path d="M32 8v48l16-5 3.6-43z" fill="#33a9dc"/>
+              <path d="M20 18h24l-.6 7H28l.5 6h14.2l-1.3 14L32 49l-9.3-4-.6-8h6.5l.3 3.6 3.1 1 3.2-1 .4-5H21z" fill="#fff"/>
+            </svg>
+            <div>
+              <h3>CSS</h3>
+              <p>Style the design and layout.</p>
+            </div>
+          </article>
+
+          <!-- JavaScript card -->
+          <article class="card skill-card reveal">
+            <svg class="skill-icon" viewBox="0 0 64 64" aria-hidden="true">
+              <rect x="4" y="4" width="56" height="56" rx="3" fill="#f7df1e"/>
+              <text x="58" y="56" text-anchor="end" font-family="Arial, sans-serif" font-weight="800" font-size="30" fill="#111">JS</text>
+            </svg>
+            <div>
+              <h3>JavaScript</h3>
+              <p>Add interactivity and functionality.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         5. PROJECTS SECTION
+         ===================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">My <span class="gradient-text">Activities</span></h2>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="card project-card reveal">
+            <img src="project1.jpg" alt="" loading="lazy" />
+            <div class="project-body">
+              <h3>Student Personal Website</h3>
+              <p>A simple Student Personal Website.</p>
+              <div class="badges"><span>HTML</span></div>
+              <!-- Change "#" to your real project link later -->
+              <a href="StudentPersonalWebsite.html" class="btn btn-small" data-project="Travel Website">View Project</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project-card reveal">
+            <img src="project2.jpg" alt="" loading="lazy" />
+            <div class="project-body">
+              <h3>First CSS Activity</h3>
+              <p>A basic CSS Activity inspired by NBA Website.</p>
+              <div class="badges"><span>HTML</span><span>CSS</span></div>
+              <a href="home.html" class="btn btn-small" data-project="Calculator">View Project</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project-card reveal">
+            <img src="project3.jpg" alt="" loading="lazy" />
+            <div class="project-body">
+              <h3>My Student Profile</h3>
+              <p>A simple My student Profile Website with add, delete feature.</p>
+              <div class="badges"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <a href="index1.html" class="btn btn-small" data-project="To-Do List">View Project</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         6. CONTACT SECTION
+         ===================================================== -->
+    <section class="section alt" id="contact">
+      <div class="container contact-grid">
+
+        <!-- Left: contact details -->
+        <div class="reveal">
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="contact-lead">
+            Feel free to contact me for any project, collaboration, or just to say hello!
+          </p>
+
+          <ul class="contact-list">
+            <li><svg class="icon"><use href="#i-mail"></use></svg><a href="mailto:markpombao@example.com">ombaopocholo@gmail.com</a></li>
+            <li><svg class="icon"><use href="#i-phone"></use></svg><a href="tel:+639123456789">+63 936 557 7909</a></li>
+            <li><svg class="icon"><use href="#i-pin"></use></svg><span>Bulacan, Philippines</span></li>
+          </ul>
+
+          <div class="socials" aria-label="Social media links">
+            <a href="#" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"></use></svg></a>
+          </div>
+        </div>
+
+        <!-- Right: contact form (frontend only, validated by script.js) -->
+        <form class="contact-form card reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" />
+            <small class="error" id="name-error"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+            <small class="error" id="email-error"></small>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+            <small class="error" id="message-error"></small>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       7. FOOTER
+       ===================================================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Mark Pocholo Ombao. All rights reserved.</p>
+      <div class="socials" aria-label="Social media links">
+        <a href="#" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"></use></svg></a>
+        <a href="#" aria-label="GitHub"><svg class="icon"><use href="#i-github"></use></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top button (shown by script.js after scrolling down) -->
+  <button class="to-top" id="to-top" aria-label="Scroll to top">
+    <svg class="icon"><use href="#i-up"></use></svg>
+  </button>
+
+  <!-- Link to our JavaScript file (at the end so the page loads first) -->
+  <script src="script.js"></script>
+</body>
+</html>
