@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .body{
+            border: black solid 2px;
+            border-radius: 8px;
+            font-size: 18px;
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: rgb(177, 80, 99);
+            height: auto;
+            padding: 20px;
+        }
+
+        .header{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            color: rgb(0, 0, 0);
+            margin: 20px;
+        }
+
+        .cont4{
+            border: black solid 2px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 23px;
+            margin-left: 20px;
+            margin-right: 20px;
+            background-color: aliceblue;
+            margin-bottom: 10px;
+            height: auto;
+            padding: 20px;
+        }
+
+        .cont2{
+            margin: 20px;
+            border: black solid 2px;
+            border-radius: 8px;
+            background-color: aliceblue;
+            padding: 18px;
+            margin: 18px;
+        }
+
+        .buttons{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        button{
+            padding: 15px 20px;
+            background-color: rgb(121, 171, 214);
+            border: none;
+            border-radius: 15px;
+        }
+
+        button:hover{
+            background-color: rgb(247, 245, 124);
+        }
+
+        .courses{
+            margin: 20px;
+            border: black solid 2px;
+            border-radius: 8px;
+            background-color: aliceblue;
+            padding: 18px;
+            margin: 18px;
+        }
+
+        #option{
+            width: 100%;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+
+        .cont3{
+            margin: 20px;
+            border: black solid 2px;
+            border-radius: 8px;
+            background-color: aliceblue;
+            padding: 18px;
+            margin: 18px;
+        }
+
+        #tbl{
+            width: 100%;
+        }
+        th{
+            background-color: burlywood;
+        }
+        .tblBtn{
+            display: flex;
+            justify-content: center;
+            padding: 15px 20px;
+            gap: 20px;
+        }
+
+    </style>
+<body>
+    
+    <div class="body">
+
+        <div class="header">
+
+            <h1 id="head">My Student Profile</h1>
+            <p>Welcome to my beutiful site!</p>
+
+        </div>
+
+        <div class="cont2">
+            <h2>Student information</h2>
+            <br>
+            <p>
+                Name: Pocholo Ombao
+                <br>
+                Course: BSIT
+                <br>
+                Year level: 3rd Year
+            </p>
+
+        </div>
+
+        <div class="cont4">            
+            <p id="change">Mouse Status!</p>
+        </div>
+        
+        <div class="buttons">
+
+            <button id="btn1">HIDE PROFILE</button>
+            <button id="btn2">SHOW PROFILE</button>
+            <button id="btn3">CHANGE TITLE</button>
+
+        </div>
+
+        <div class="courses">
+
+            <h2>choose your Course</h2>
+            <br>
+            <select id="option">
+                <option value="BSIT">BSIT</option>
+                <option value="BSCS">BSCS</option>
+                <option value="BSTM">BSTM</option>
+            </select>
+
+        </div>
+
+        <div class="cont3">
+
+            <h2>Student list</h2>
+            <br>
+            <b>Registered Students:</b>
+            <table border="2" id="tbl">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Birthday</th>
+                    <th>Year</th>
+                </tr>
+
+                <tr>
+                    <td>Cholo</td>
+                    <td>20</td>
+                    <td>08-12-2006</td>
+                    <td>3rd Year</td>
+                </tr>
+
+                <tr>
+                    <td>gerald</td>
+                    <td>26</td>
+                    <td>07-12-2000</td>
+                    <td>3rd Year</td>
+                </tr>
+
+                <tr>
+                    <td>john</td>
+                    <td>23</td>
+                    <td>05-8-2003</td>
+                    <td>1st Year</td>
+                </tr>
+
+                <tr>
+                    <td>mark</td>
+                    <td>21</td>
+                    <td>01-22-2005</td>
+                    <td>4th Year</td>
+                </tr>
+
+            </table>
+            <div class="tblBtn">
+                
+                <button id="btn4">ODD ROWS</button>
+                <button id="btn5">EVEN ROWS</button>
+                <button id="btn6">HIDE TABLE</button>
+                <button id="btn7">SHOW TABLE</button>
+            </div>
+        </div>
+        
+
+    </div>
+    
+    <script src="script1.js"></script>
+
+</body>
+</html>

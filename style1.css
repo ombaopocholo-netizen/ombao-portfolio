@@ -1,0 +1,127 @@
+.home{
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    border: 5px solid black; 
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h4{
+    font-size: 30px;
+    color: white; 
+}
+
+.logo img{   
+    width: 150px;   
+}
+
+.home_nav{
+    background-color: gray;   
+}
+
+.home_nav a{
+    font-size: 30px;
+    color: skyblue;
+    padding: 30px;
+}
+#e{
+    background-color: rgb(46, 44, 44);
+    padding: 20px;
+    text-align: center;
+}
+.sec{
+    color: white;
+}
+.sec h1{
+    font-size: 40px;
+    padding: 1px;
+}
+.bord{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 40px;
+    gap: 200px;
+}
+.border{
+    flex: 20px;
+    background-color: white;
+    border: 1px solid white;
+    margin: 20px;
+    
+}
+.border h3{
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.border input{
+    font-size: 23px;
+    background-color: yellow;
+    font-style: oblique;
+    width: 200px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.border p{
+    font-size: 15px;
+    margin-bottom: 120px;
+}
+.border h1{
+    font-size: 30px;
+}
+.border2{
+    flex: 20px;
+    background-color: white;
+    border: 1px solid white;
+    margin: 20px;
+}
+.border2 h3{
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.border2 input{
+    font-size: 23px;
+    background-color: yellow;
+    font-style: oblique;
+    width: 200px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.border2 p{
+    font-size: 15px;
+    margin-bottom: 120px;
+}
+.border2 h1{
+    font-size: 30px;
+}
+#a{
+    background-color: rgb(46, 44, 44);
+    justify-items: center;
+    padding: 20px;
+}
+.tittle_nav h1{
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.team{
+    padding: 40px;
+}
+.team img{
+    width: 1000px;
+    height: 500px;
+}
+.one{
+    background-color: grey;
+    padding: 3px;
+    text-align: center;
+}
+.one p{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
